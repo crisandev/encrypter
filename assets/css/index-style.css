@@ -11,8 +11,8 @@
 
 /* VARIABLES */
 :root {
-   --secondary-txt-color: #0274f9; 
-   --main-txt-color-dark: #999999; 
+   --secondary-txt-color: #0274f9;
+   --main-txt-color-dark: #999999;
    --bg-color-dark: #001518;
    --bg-color-light: #002328;
 
@@ -67,13 +67,13 @@ nav ul li:not(:last-child) a:focus {
    font-weight: 600;
    text-decoration: none;
    color: white;
-   margin: 0 -30px 0 50px ;
-   transition: .2s;
+   margin: 0 -30px 0 50px;
+   transition: 0.2s;
 }
 
 .logo a:hover {
    color: var(--secondary-txt-color);
-   transition: .2s;
+   transition: 0.2s;
 }
 
 .btn-encrypt {
@@ -86,7 +86,7 @@ nav ul li:not(:last-child) a:focus {
    font-size: var(--navbar-font-size);
    font-weight: 500;
    margin: 0 50px;
-   transition: .2s;
+   transition: 0.2s;
 }
 
 .btn-encrypt:hover {
@@ -196,8 +196,7 @@ main {
    font-size: 35px;
 }
 
-
-.about h3{
+.about h3 {
    color: var(--main-txt-color-dark);
 }
 
@@ -269,6 +268,10 @@ footer .footer-container h2::before {
    background-color: var(--secondary-txt-color);
 }
 
+.about-us h2 {
+   margin-bottom: 35px !important;
+}
+
 footer p {
    color: var(--main-txt-color-dark);
 }
@@ -287,12 +290,12 @@ footer p {
    align-items: center;
    margin-right: 10px;
    text-decoration: none;
-   transition: .3s;
+   transition: 0.3s;
    scale: 1.4;
 }
 
 .sci li a:hover {
-   transition: .3s;
+   transition: 0.3s;
    scale: 1.6;
 }
 
@@ -308,7 +311,7 @@ footer p {
 
 .quick-links ul li a {
    color: var(--main-txt-color-dark);
-   margin-bottom: 10px;
+   margin-top: 15px;
    display: block;
    display: inline-block;
 }
@@ -322,6 +325,10 @@ footer p {
    margin-right: 0 !important;
 }
 
+.contact h2 {
+   margin-bottom: 35px !important;
+}
+   
 .contact .info {
    position: relative;
 }
