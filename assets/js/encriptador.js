@@ -1,11 +1,24 @@
-const mensajeContenedor = document.querySelector(".mensaje-contenedor");
+const messageContainer = document.querySelector(".new-text-container");
+ 
+const btnCopy = document.querySelector(".copy");
+const messageCopy = document.querySelector(".text");
+btnCopy.onclick = () => {
+   navigator.clipboard.writeText(messageCopy.innerHTML)
+};
+
+btnCopy.addEventListener("click", () => {
+   btnCopy.classList.add("active");
+   setTimeout(() => {
+      btnCopy.classList.remove("active");
+   }, 2000);
+});
 
 //ENCRIPTAR
-function encriptarTexto(mensaje) {
+function encryptText(message) {
    let newText = "";
-   const letras = mensaje.split("");
-   letras.forEach((letra) => {
-      switch (letra) {
+   const letters = message.split("");
+   letters.forEach((letter) => {
+      switch (letter) {
          case "a":
             newText += "ai";
             break;
@@ -26,64 +39,64 @@ function encriptarTexto(mensaje) {
             newText += "ufat";
             break;
          default:
-            newText += letra;
+            newText += letter;
             break;
       }
    });
-
    return newText;
 }
 
-function desencriptarTexto(mensaje) {
+function decryptText(message) {
    let newText = "";
-   const palabras = mensaje.split(" ");
+   const words = message.split(" ");
 
-   palabras.forEach((palabra) => {
+   words.forEach((word) => {
       let replaced = false;
 
-      if (palabra.includes("ai")) {
-         palabra = `${palabra.replaceAll(/ai/g, "a")}`;
+      if (word.includes("ai")) {
+         word = `${word.replaceAll(/ai/g, "a")}`;
          replaced = true;
       }
-      if (palabra.includes("enter")) {
-         palabra = `${palabra.replaceAll(/enter/g, "e")}`;
+      if (word.includes("enter")) {
+         word = `${word.replaceAll(/enter/g, "e")}`;
          replaced = true;
       }
-      if (palabra.includes("imes")) {
-         palabra = `${palabra.replaceAll(/imes/g, "i")}`;
+      if (word.includes("imes")) {
+         word = `${word.replaceAll(/imes/g, "i")}`;
          replaced = true;
       }
-      if (palabra.includes("ober")) {
-         palabra = `${palabra.replaceAll(/ober/g, "o")}`;
+      if (word.includes("ober")) {
+         word = `${word.replaceAll(/ober/g, "o")}`;
          replaced = true;
       }
-      if (palabra.includes("ufat")) {
-         palabra = `${palabra.replaceAll(/ufat/g, "u")}`;
+      if (word.includes("ufat")) {
+         word = `${word.replaceAll(/ufat/g, "u")}`;
          replaced = true;
       }
 
-      newText += `${palabra} `
-      
+      newText += `${word} `;
    });
 
    return newText;
 }
 
-function llamarEncriptar() {
-   const element = document.querySelector(".escribirMensaje");
-   const text = encriptarTexto(document.querySelector("#mensaje").value);
+function execEncrypt() {
+   const element = document.querySelector(".text");
+   const text = encryptText(document.querySelector("#message").value);
+   element.classList.add("text");
    element.innerHTML = text;
-   mensajeContenedor.appendChild(element);
+   messageContainer.appendChild(element);
 }
 
-function llamarDesencriptar() {
-   const element = document.querySelector(".escribirMensaje");
-   const text = desencriptarTexto(document.querySelector("#mensaje").value);
+function execDecrypt() {
+   const element = document.querySelector(".text");
+   const text = decryptText(document.querySelector("#message").value);
+   element.classList.add("text");
    element.innerHTML = text;
-   mensajeContenedor.appendChild(element);
+   messageContainer.appendChild(element);
 }
 
-const encriptar = document.querySelector(".encriptar");
-const desencriptar = document.querySelector(".desencriptar");
-encriptar.onclick = llamarEncriptar;
-desencriptar.onclick = llamarDesencriptar;
+const encrypt = document.querySelector(".encrypt");
+const decrypt = document.querySelector(".decrypt");
+encrypt.onclick = execEncrypt;
+decrypt.onclick = execDecrypt;

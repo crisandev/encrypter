@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Enigma Encryptor</title>
 </head>
 
@@ -34,15 +35,36 @@
     </header>
 
     <main>
-        <div class="message-container">
-            <h2>Write Your Message</h2>
-            <textarea class="textarea" placeholder="Enter a message..."></textarea>
+        <h2>Write your <span>message</span> </h2>
+        <div class="container-encrytor">
+            <div class="message-container">
+                <textarea class="textarea" id="message" placeholder="Enter a message..."></textarea>
+            </div>
+            <div class="encryption-container">
+                <div class="btn-encrypt-message">
+                    <div class="new-text-container">
+                        <div>
+                            <button type="button" class="encrypt">
+                                ENCRYPT
+                            </button>
+                            <button type="button" class="decrypt">
+                                DECRYPT
+                            </button>
+                            <button type="button" class="copy" id="copy">
+                                <i class="fa-solid fa-clone"></i>
+                            </button>
+                        </div>
+                        <p class="text">
+                            <span> Opss!</span>We don't find text <br>
+                            Write a message and press one of the button below to encrypt or decrypt your message.
+                            <img src="../images/buscar.gif" class="img-searching" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="encryption-container">
-            <h2>Write Your Message</h2>
-            <p></p>
-        </div>
-<!-- 
+
+        <!-- 
         <div>
             <div>
                 <form>
