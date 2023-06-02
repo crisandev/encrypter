@@ -15,7 +15,6 @@
    --main-txt-color-dark: #999999;
    --bg-color-dark: #001518;
    --bg-color-light: #002328;
-
    --main-color: #009bb2;
    --bb-color: #00e5f2;
    --navbar-font-size: 18px;
@@ -31,6 +30,11 @@ body {
 }
 
 /* NAV BAR */
+.hamburger, .last-item {
+   display: none;
+}
+
+
 header {
    width: 100%;
    padding: 40px 0 30px;
@@ -328,7 +332,7 @@ footer p {
 .contact h2 {
    margin-bottom: 35px !important;
 }
-   
+
 .contact .info {
    position: relative;
 }

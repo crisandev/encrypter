@@ -13,20 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/media-queries.css">
     <title>Enigma Encryptor</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="logo">
             <h2><a href="index.html">Encryptor</a></h2>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">My Info</a></li>
+                <li class="last-item"><a href="views/encripter.html">Encrypt</a></li>
             </ul>
         </nav>
         <a href="views/encripter.html" class="btn"><button class="btn-encrypt">Encrypt</button></a>
@@ -52,7 +56,7 @@
         <div class="about-section">
             <div class="about">
                 <img src="images/encriptado.png" alt="">
-                <div>
+                <div class="about-content">
                     <h2>About <span class="text-project">Project</span></h2>
                     <h3>What Is Encryptor Project?</h3>
                     <p>
@@ -127,6 +131,22 @@
     <div class="copyright">
         <p>&copy Copyrigh Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia.</p>
     </div>
+
+    <script>
+        const btnMenu = document.querySelector(".hamburger");
+
+        btnMenu.onclick = () => {
+            const menuElements = document.querySelector(".navbar");
+            
+            if(menuElements.classList.contains("active")) {
+                menuElements.classList.remove("active");
+            }else{
+                menuElements.classList.add("active");
+
+            }
+        }
+
+    </script>
 </body>
 
 </html>

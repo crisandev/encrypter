@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
 
 main {
-   margin-top: 50px;
-   margin-bottom: 100px;
+   margin: 50px;
 }
 
 main .container-encrytor {
@@ -14,7 +13,7 @@ main .container-encrytor {
 
 .message-container,
 main > h2 {
-   margin-left: 100px;
+   margin-left: 5%;
    margin-right: 50px;
 }
 
@@ -29,7 +28,7 @@ main > h2 > span {
 }
 
 .encryption-container {
-   margin-right: 100px;
+   margin-right: 150px;
 }
 
 .textarea {
@@ -43,9 +42,9 @@ main > h2 > span {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.4;
-   min-width: 550px;
+   width: 550px;
+   height: 450px;
    max-width: 550px;
-   min-height: 450px;
    max-height: 450px;
    transition: all 0.2s;
 }
@@ -76,7 +75,6 @@ main > h2 > span {
    line-height: 1.4;
    flex-direction: column;
    text-align: center;
-
    width: 550px;
    max-width: 550px;
    max-height: 395px;

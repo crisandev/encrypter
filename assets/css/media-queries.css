@@ -1,0 +1,161 @@
+@media only screen and (max-width: 600px) {
+   .header > .btn {
+      display: none;
+   }
+
+   .last-item {
+      display: contents;
+   }
+
+   .header {
+      display: block;
+      padding-bottom: 0;
+      transition: 0.5s;
+   }
+
+   .logo a {
+      float: left;
+      margin-left: 25px;
+   }
+
+   .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 30px;
+      transition: 0.5s;
+      float: right;
+   }
+
+
+   .hamburger i{
+      font-size: 25px;
+   }
+
+   .navbar {
+      clear: both;
+      text-align: center;
+      display: none;
+   }
+
+   .navbar.active {
+      opacity: 1;
+      display: block;
+
+      animation: scale-up-vertical-top 0.4s;
+   }
+
+   .navbar ul {
+      margin-top: 50px;
+   }
+   .navbar ul li {
+      display: block;
+      padding: 20px 0;
+   }
+
+   .navbar ul li a {
+      margin: 0;
+   }
+
+   @keyframes scale-up-vertical-top {
+      0% {
+         transform: scaleY(0.4);
+         transform-origin: center top;
+      }
+      100% {
+         transform: scaleY(1);
+         transform-origin: center top;
+      }
+   }
+
+   .main-section {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+   }
+
+   .description-content {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .description-content h1 {
+      text-align: center;
+      width: 100%;
+      font-size: 60px;
+      border-bottom: 2px solid white;
+   }
+
+   .description-content p {
+      text-align: center;
+      line-height: 30px;
+   }
+
+   .img-computer {
+      margin: 50px auto 0;
+      width: 250px;
+   }
+
+   .about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+
+   .about > img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 0;
+   }
+
+   .about .about-content {
+      display: block;
+      margin: 50px auto;
+      padding: 0 20px;
+      width: 100%;
+   }
+
+   .about .about-content h2,
+   .about-content h3 {
+      text-align: center;
+      width: 100%;
+   }
+
+   .about-content p,
+   .about-content a {
+      text-align: justify;
+      width: 100%;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+   body {
+      /* background-color: red !important; */
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   body {
+      /* background-color: purple !important; */
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   body {
+      /* background-color: white !important; */
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   body {
+      /* background-color: greenyellow !important; */
+   }
+}
