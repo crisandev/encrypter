@@ -20,6 +20,7 @@
    --navbar-font-size: 18px;
 }
 
+
 body {
    color: white;
    overflow-x: hidden;
@@ -27,6 +28,7 @@ body {
    display: flex;
    align-items: center;
    flex-direction: column;
+   transition: 0.4s;
 }
 
 /* NAV BAR */

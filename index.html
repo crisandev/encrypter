@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="../assets/css/media-queries-index.css">
+    <link rel="stylesheet" href="../assets/css/media-queries-encrypter.css">
     <title>Enigma Encryptor</title>
 </head>
 
@@ -28,12 +29,12 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#" id="about-navbar">About</a></li>
                 <li><a href="#">My Info</a></li>
-                <li class="last-item"><a href="views/encripter.html">Encrypt</a></li>
+                <li class="last-item"><a href="views/encrypter.html">Encrypt</a></li>
             </ul>
         </nav>
-        <a href="views/encripter.html" class="btn"><button class="btn-encrypt">Encrypt</button></a>
+        <a href="views/encrypter.html" class="btn"><button class="btn-encrypt">Encrypt</button></a>
     </header>
     <main>
         <div class="main-section">
@@ -44,7 +45,7 @@
                     We have the best encrypter, and you can use it now, so, don't wait and start to use it.
                     Our encrypter is waiting for you.
                 </p>
-                <a href="views/encripter.html" class="lets-encrypt">
+                <a href="views/encrypter.html" class="lets-encrypt">
                     <i class="fa-solid fa-keyboard"></i>Let's Encrypt...
                 </a>
             </div>
@@ -132,21 +133,7 @@
         <p>&copy Copyrigh Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia.</p>
     </div>
 
-    <script>
-        const btnMenu = document.querySelector(".hamburger");
-
-        btnMenu.onclick = () => {
-            const menuElements = document.querySelector(".navbar");
-            
-            if(menuElements.classList.contains("active")) {
-                menuElements.classList.remove("active");
-            }else{
-                menuElements.classList.add("active");
-
-            }
-        }
-
-    </script>
+    <script src="assets/js/navbarResponsive.js"></script>
 </body>
 
 </html>

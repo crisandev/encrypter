@@ -1,0 +1,204 @@
+@media only screen and (max-width: 599px) {
+
+   main .container-encrytor {
+      flex-direction: column;
+   }
+
+   main > h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      text-transform: uppercase;
+   }
+   
+   main > h2 > span {
+      color: #0274f9;
+   }
+   
+   .encryption-container {
+      margin-right: 150px;
+   }
+   
+   .textarea {
+      background-color: #002328;
+      color: #999999;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      outline: none;
+      font-family: "Inconsolata", monospace;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      width: 550px;
+      height: 450px;
+      max-width: 550px;
+      max-height: 450px;
+      transition: all 0.2s;
+   }
+   
+   .textarea:hover {
+      cursor: pointer;
+      background-color: #013037;
+   }
+   
+   .textarea:focus {
+      cursor: text;
+      color: white;
+      background-color: #013037;
+      border-color: rgb(204, 204, 204);
+   }
+   
+   .encryption-container .text {
+      display: flex;
+      align-items: center;
+   
+      background-color: #002328;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      font-family: "Inconsolata", monospace;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      flex-direction: column;
+      text-align: center;
+      width: 550px;
+      max-width: 550px;
+      max-height: 395px;
+      word-break: break-all;
+      overflow-y: auto;
+      transition: all 0.2s;
+   }
+   
+   .text span {
+      border-radius: 10px;
+      font-family: "Inconsolata", monospace;
+      font-size: 25px;
+      line-height: 1.4;
+      text-align: center;
+      color: red;
+   }
+   
+   .btn-encrypt-message {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      font-family: "Inconsolata", monospace;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      width: 600px;
+      height: 450px;
+      text-align: center;
+   }
+   
+   .btn-encrypt-message div button {
+      color: white;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      width: 150px;
+      padding: 9px 25px;
+      margin: 10px 15px 10px 0;
+      transition: 0.4s;
+      background-color: #0274f9;
+      padding: 15px 25px;
+   }
+   
+   .btn-encrypt-message div {
+      text-align: justify;
+      position: relative;
+   }
+   
+   .btn-encrypt-message button:hover {
+      transform: scale(1.1);
+      transition: 0.4s;
+      cursor: pointer;
+   }
+   
+   .btn-encrypt-message button.encrypt:hover {
+      background-color: transparent;
+      border: 1px solid rgb(2, 190, 5);
+      color: rgb(2, 190, 5);
+   }
+   
+   .btn-encrypt-message button.decrypt:hover {
+      background-color: transparent;
+      border: 1px solid #0274f9;
+      color: #0274f9;
+   }
+   
+   .btn-encrypt-message div button.copy {
+      background-color: transparent;
+      width: 100px;
+      color: white;
+      position: absolute;
+      right: -10px;
+      border: 1px solid #002328;
+      padding: 9px 25px;
+   }
+   
+   .btn-encrypt-message button.copy i {
+      font-size: 30px;
+      color: #0274f9;
+   }
+   
+   .copy:active {
+      background-color: #63abfe !important;
+   }
+   
+   .copy:before {
+      content: "Copied";
+      position: absolute;
+      width: 70px;
+      top: -50px;
+      right: 0;
+      background-color: #5c81dc;
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+   }
+   
+   .copy:after {
+      content: "";
+      position: absolute;
+      top: -22px;
+      right: 25px;
+      width: 10px;
+      height: 10px;
+      background-color: #5c81dc;
+      transform: rotate(45deg);
+      display: none;
+   }
+   
+   #copy:hover {
+      transform: scale(1);
+   }
+   
+   button.copy.active:before,
+   button.copy.active:after {
+      display: block !important;
+   }
+   
+   .img-searching {
+      background-color: #b0b0b0;
+      border-radius: 45% 55% 70% 30% / 30% 34% 66% 70%;
+      width: 100px;
+   }
+   
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 979px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

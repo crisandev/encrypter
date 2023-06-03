@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
    .header > .btn {
       display: none;
    }
@@ -26,8 +26,7 @@
       float: right;
    }
 
-
-   .hamburger i{
+   .hamburger i {
       font-size: 25px;
    }
 
@@ -136,21 +135,135 @@
    }
 }
 
-@media only screen and (min-width: 600px) {
-   body {
-      /* background-color: red !important; */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+   .logo a {
+      margin: 0 15px;
+   }
+
+   .btn-encrypt {
+      margin: 0 15px 0 20px;
+   }
+
+   .navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 355px;
+   }
+   .navbar ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .navbar ul li {
+      text-align: center;
+      width: 33%;
+   }
+   .navbar ul li a {
+      margin: 0;
+   }
+
+   .main-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+   }
+
+   .description-content {
+      width: 100%;
+      max-width: 605px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .description-content h1 {
+      text-align: center;
+      width: 100%;
+      font-size: 60px;
+      border-bottom: 2px solid white;
+   }
+
+   .description-content p {
+      text-align: center;
+      line-height: 30px;
+   }
+
+   .img-computer {
+      margin: 50px auto 0;
+      width: 300px;
+   }
+
+   .about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+
+   .about > img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 0;
+   }
+
+   .about .about-content {
+      display: block;
+      margin: 50px auto;
+      padding: 0 20px;
+      width: 100%;
+   }
+
+   .about .about-content h2,
+   .about-content h3 {
+      text-align: center;
+      width: 100%;
+   }
+
+   .about-content p,
+   .about-content a {
+      text-align: justify;
+      width: 100%;
    }
 }
 
-@media only screen and (min-width: 768px) {
-   body {
-      /* background-color: purple !important; */
+@media only screen and (min-width: 769px) and (max-width: 979px) {
+
+   .description-content {
+      margin-left: 5%;
+   }
+
+   .img-computer {
+      margin-left: 10%;
+      width: 80%;
+      max-width: 450px;
+   }
+
+   .about > img {
+      width: 260px;
+      height: 260px;
+      margin: 0 5% 0 10%;
+   }
+
+   .about > div.about-content {
+      padding-left: 0;
+      margin-right: 20px;
+
    }
 }
 
 @media only screen and (min-width: 992px) {
    body {
-      /* background-color: white !important; */
    }
 }
 
