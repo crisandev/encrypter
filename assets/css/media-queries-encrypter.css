@@ -80,12 +80,220 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+   main {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   main > h2 {
+      margin: 25px 10%;
+   }
+
+   main .container-encrytor {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+   }
+
+   .message-container {
+      width: 100%;
+      margin: 0;
+   }
+
+   .textarea {
+      margin: 0;
+      width: 90%;
+   }
+
+   .encryption-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+   }
+
+   .btn-encrypt-message {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      height: 100%;
+   }
+
+   .btn-encrypt-message div {
+      display: flex;
+      text-align: justify;
+      position: static;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      width: 100%;
+   }
+
+   .btn-encrypt-message div button {
+      text-align: center;
+      width: 100%;
+      max-width: 555px;
+
+      margin: 10px 20px;
+   }
+
+   .btn-encrypt-message div button.copy {
+      position: static;
+      width: 100%;
+      max-width: 555px;
+      margin: 10px 20px;
+   }
+
+   .new-text-container {
+      display: flex;
+      width: 100%;
+   }
+
+   .new-text-container > p.text {
+      max-width: 555px;
+   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 979px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+   
+    main {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   main > h2 {
+      margin: 25px 10%;
+   }
+
+   main .container-encrytor {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+   }
+
+   .message-container {
+      width: 100%;
+      margin: 0;
+   }
+
+   .textarea {
+      margin: 0;
+      width: 90%;
+   }
+
+   .encryption-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+   }
+
+   .btn-encrypt-message {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      height: 100%;
+   }
+
+   .btn-encrypt-message div {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      position: static;
+      margin-bottom: 10px;
+      width: 100%;
+   }
+
+   .btn-encrypt-message div button {
+      grid-row: 1;
+      text-align: center;
+      max-width: 555px;
+      margin: auto 35px;
+   }
+   
+   .btn-encrypt-message div button.copy {
+      grid-row: 1;
+      position: static;
+      margin: auto 35px;
+
+   }
+
+   .new-text-container {
+      display: flex;
+      width: 100%;
+   }
+
+   .new-text-container > p.text {
+      flex-direction: column;
+      max-width: 555px;
+      margin-left: 30px;
+   }
 }
 
 @media only screen and (min-width: 992px) {
+   main {
+      align-items: center;
+      justify-content: space-evenly;
+   }
+
+   main .container-encrytor {
+      justify-content: flex-end;      
+      margin: 0;
+      min-width: 1020px;
+   }
+
+   .message-container {
+      justify-content:start;
+      width: 100%;
+      margin: 0;
+   }
+
+   .textarea {
+      margin: 25px 10%;
+      min-width: 390px;
+      width: 90%;
+   }
+
+
+
+   .new-text-container{
+      margin-left: 10%;
+      position: static;
+      flex-direction: column;
+   }
+
+   .btn-encrypt-message{
+      min-width: 545px;
+   }
+
+   .encryption-container{
+      position: static;
+      width: 100%;
+      min-width: 500;
+      margin: 0;
+      margin-right:  30px;
+   }
+
+   .new-text-container div button{
+      min-width: 0;
+
+   }
+
+   .new-text-container p.text{
+      min-width: 0;
+      width: 100%;
+   }
+
 }
 
 @media only screen and (min-width: 1200px) {
