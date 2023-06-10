@@ -279,7 +279,6 @@
    .encryption-container{
       position: static;
       width: 100%;
-      min-width: 500;
       margin: 0;
       margin-right:  30px;
    }
@@ -290,7 +289,7 @@
    }
 
    .new-text-container p.text{
-      min-width: 0;
+      min-width: 500px;
       width: 100%;
    }
 
