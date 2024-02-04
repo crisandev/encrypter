@@ -225,8 +225,8 @@ main {
 }
 
 .about div p {
-  margin: 25px 0;
-  line-height: 22px;
+  margin: 20px 0;
+  line-height: 21px;
 }
 
 .read-more {
@@ -282,6 +282,7 @@ footer .footer-container h2::before {
 }
 
 footer p {
+  margin-top: -2px;
   color: var(--main-txt-color-dark);
   line-height: 30px;
 }

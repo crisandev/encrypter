@@ -1,9 +1,14 @@
 const messageContainer = document.querySelector(".new-text-container");
+let copyMessage = false;
 
 const btnCopy = document.querySelector(".copy");
-const messageCopy = document.querySelector(".text");
-btnCopy.onclick = () => {
-  navigator.clipboard.writeText(messageCopy.textContent);
+
+btnCopy.onclick = async () => {
+  const messageCopy = document.querySelector(".text");
+
+  if (copyMessage) {
+    navigator.clipboard.writeText(messageCopy.textContent);
+  }
 };
 
 btnCopy.addEventListener("click", () => {
@@ -74,7 +79,7 @@ function decryptText(message) {
       replaced = true;
     }
 
-    newText += `${word} `;
+    newText += `${word}`;
   });
 
   return newText;
@@ -82,42 +87,45 @@ function decryptText(message) {
 
 function notTextToEncrypt() {
   const container = document.querySelector(".new-text-container");
-//   container.removeChild(document.querySelector(".text"))
-   
-  const p = document.createElement("p");
-  const span = document.createElement("span");
-  const img = document.createElement("img");
-  const br = document.createElement("br");
-
-  p.className = "text";
-  span.textContent = "Opss!";
-  img.src = "../images/buscar.gif";
-  img.className = "img-searching";
-  img.alt = "Searching...";
-
-  p.appendChild(span);
-  p.appendChild(br);
-  p.appendChild(img);
-  container.append(p);
+  container.removeChild(document.querySelector(".text"));
+  container.insertAdjacentHTML(
+    "beforeend",
+    `
+    <p class="text">
+    <span> Opss!</span>We don't find text <br />
+    Write a message and press one of the button below to encrypt or decrypt your message.
+    <img src="../images/buscar.gif" class="img-searching" alt="Searching..." />
+    </p>
+    `
+  );
 }
 
 function execEncrypt() {
   const text = encryptText(document.querySelector("#message").value);
-  if (text === undefined || text === "") {
+  if (text === undefined || !text.replace(/\s/g, "").length > 0) {
     notTextToEncrypt();
+    copyMessage = false;
+  } else {
+    copyMessage = true;
+    const element = document.querySelector(".text");
+    element.classList.add("text");
+    element.innerHTML = text;
+    messageContainer.appendChild(element);
   }
-  const element = document.querySelector(".text");
-  element.classList.add("text");
-  element.innerHTML = text;
-  messageContainer.appendChild(element);
 }
 
 function execDecrypt() {
-  const element = document.querySelector(".text");
   const text = decryptText(document.querySelector("#message").value);
-  element.classList.add("text");
-  element.innerHTML = text;
-  messageContainer.appendChild(element);
+  if (text === undefined || !text.replace(/\s/g, "").length > 0) {
+    notTextToEncrypt();
+    copyMessage = false;
+  } else {
+    copyMessage = true;
+    const element = document.querySelector(".text");
+    element.classList.add("text");
+    element.innerHTML = text;
+    messageContainer.appendChild(element);
+  }
 }
 
 const encrypt = document.querySelector(".encrypt");
