@@ -4,9 +4,9 @@
 
 I'm thrilled to share my exhilarating experience in the Alura-Oracle Educational Challenge, a fantastic collaboration between Alura, Oracle, and its ONE program (Oracle Next Education). Join me on this riveting educational adventure where learning meets innovation! 🌈
 
-[View Project](https://crisandev.github.io/encrypter/index.html "View Project")
+<a href="https://crisandev.github.io/encrypter/index.html" target="_blank" title="View Project">View Project</a>
 <br>
-[https://crisandev.github.io/encrypter/index.html](https://crisandev.github.io/encrypter/index.html "https://crisandev.github.io/encrypter/index.html")
+<a href="https://crisandev.github.io/encrypter/index.html" target="_blank">https://crisandev.github.io/encrypter/index.html</a>
 
 ## How the Encryption Challenge Works 🔐🤖
 
